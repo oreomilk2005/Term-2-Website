@@ -1,0 +1,87 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Tetris</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta http-equiv="pics-label" content='(PICS-1.1 "http://www.classify.org/safesurf/" L gen true for "http://www.mathsisfun.com" r (SS~~000 1))'>
+<meta name="referrer" content="always">
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<script>
+var keys = {};
+window.addEventListener("keydown",
+    function(e){
+        keys[e.keyCode] = true;
+        switch(e.keyCode){
+            case 37: case 39: case 38:  case 40: // Arrow keys
+            case 32: e.preventDefault(); break; // Space
+            default: break; // do not block other keys
+        }
+    },
+false);
+window.addEventListener('keyup',
+    function(e){
+        keys[e.keyCode] = false;
+    },
+false);
+}
+</script>
+
+<body>
+<div class="dropdown">
+  <button class="dropbtn"></button>
+  <div class="dropdown-content">
+    <a href="Tetris-home.html">Home</a>
+    <a href="Tetris-Gameplay.html">Gameplay</a>
+    <a href="Tetris-Personal Connections.html">Personal Connections</a>
+	<a href="Tetris-Gallery.html">Gallery</a>
+  </div> 
+</div>
+
+<center>
+	<a href="Tetris-home.html"><img class="title" src="Tetris.png" width="500"></a>
+</center>
+
+<center>
+<P style="margin-right:100px;">This is a small version of Tetris that you can try</p>
+</center>
+
+<iframe id="iframe1" src="tetris game/index.html" scrolling="no" style="width:600px; height:700px; overflow:hidden; margin:auto; display:block; border:none;"></iframe>
+
+<script>
+var div = document.getElementById("iframe1");
+div.onload = function() { 
+	div.contentWindow.focus();  // works in Chrome, not FF
+	var div2 = div.contentWindow.document;
+	div2.addEventListener("keydown", function(event){
+   event.preventDefault();
+	});
+};
+</script>
+
+<center>
+<div class="gameplay">
+	<p>Tetris is an easy game and has simple rules. Your goal is to play as long as possible before game over and score as many points as possible. </p>
+	<ol>
+	<li>You can only move the peices horizontally and rotate it</li>
+	<li>Your game is over when you reach to the top</li>
+	<li>You can only remove the peices by filling a line</li>
+	</ol>
+</div>
+</center>
+
+<center>
+<div class="footer">
+<p>
+&copy; Tetris | Designed by Olivia Wu
+</p>
+</center>
+</div>
+
+
+</body>
+</html>

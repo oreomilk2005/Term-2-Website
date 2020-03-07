@@ -1,0 +1,279 @@
+@font-face { 
+   font-family: Tetris; 
+   src: url('Tetris.ttf'); 
+   } 
+   
+body{
+	background-color:black;	
+}
+
+
+
+/*Menu*/
+/* Style The Dropdown Button */
+body{
+	background-color:black;	
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-image:url('stoping.png');
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width:150px;
+  height:150px;
+  margin-right:100px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float:right;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: yellow}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-image:url('playing.png')
+}
+
+/*Home Paragraphs*/
+
+.title{
+position:relative;
+margin-left:100px;
+}
+
+.intro{
+	border:solid 15px red;
+	margin:20px;
+	padding:10px;
+	}
+
+.name{
+	border:solid 15px orange;
+	margin:20px;
+	padding:10px;
+	}
+
+.creator{
+	border:solid 15px yellow;
+	margin:20px;
+	padding:20px;
+	}
+	
+.Alexey{
+	float:left;
+	width:200px;
+	margin:5px;
+	margin-right:20px;
+	}
+	
+.Gallery{
+	border:solid 15px grey;
+	margin:20px;
+	padding:20px;
+	}
+	
+.gameplay{
+	border:solid 15px blue;
+	width:500px;
+	margin:20px;
+	margin-right:150px;
+	padding:20px;
+	}
+	
+.personalintro{
+	border:solid 15px orange;
+	margin:20px;
+	padding:20px;
+	}
+	
+/*Name*/
+  
+.tetra {
+  position: relative;
+  display: inline-block;
+  color:blue;
+}
+
+.tetra-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 400px;
+  max-height:100px;
+  padding:10px;
+}
+
+.tetra:hover{
+	cursor:pointer;
+	}
+	
+.tetra:hover .tetra-content {
+  display: block;
+}
+
+.tennis {
+  position: relative;
+  display: inline-block;
+  color:blue;
+}
+
+.tennis-content {
+  display: none;
+  position: absolute;
+  width: 200px;
+  height:200px;
+  z-index: 1;
+}
+
+.tennis:hover{
+	cursor:pointer;
+	}
+	
+.tennis:hover .tennis-content {
+  display: block;
+}
+
+/*Gameplay*/
+iframe{
+	overflow:hidden;
+}
+	
+/*Gallery Overlay*/
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/*PC Table*/
+table{
+	text-align:center;
+	font-size:18pt;
+	width:1000px;
+	}
+		
+tr:nth-child(even){
+	background-color: #DDD;
+	}
+		
+tr:nth-child(odd){
+	background-color: #EEE;
+	}
+	
+td:hover{
+	background-color:orange;
+}
+			
+th{
+	background-color:white;
+	color:black;
+	}
+/*letters*/
+	
+h1{
+	font-family:Tetris;
+	color:white;
+	font-size:36pt;
+}
+
+h2{
+	font-family:Tetris;
+	color:purple;
+	font-size:52pt;
+	margin:5px;
+	}
+	
+h6{
+	font-family:times new roman;
+	color:black;
+	font-size:20pt;
+	margin:0px;
+	}
+	
+p{
+	font-size:16pt;
+	color:white;
+}
+
+ol{
+	font-size:16pt;
+	color:white;
+}
+
+.footer {
+  font-family: times new roman;
+  font-size: 15px;
+  font-style: normal;
+  text-align: center;
+
+  margin-left:0px; 
+  margin-right:0px; 
+
+  z-index: 2;
+  position: relative; 
+  padding:20px;
+  margin:20px;
+	
+  width: 100%;
+  height: 50px;
+}
+
